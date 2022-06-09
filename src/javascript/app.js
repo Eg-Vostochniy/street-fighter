@@ -10,6 +10,7 @@ class App {
       App.loadingElement.style.visibility = 'visible';
 
       const fighters = await fighterService.getFighters();
+      console.log(fighters)
       const fightersElement = createFighters(fighters);
 
       App.rootElement.appendChild(fightersElement);
